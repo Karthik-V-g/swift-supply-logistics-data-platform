@@ -134,33 +134,25 @@ gold/
         swift-supply-azure-data-platform/
         │── README.md
         │── docs/
-        │   ├── architecture-diagram.png
-        │   ├── adf_pipeline_flow.png
-        │   └── powerbi-dashboard.png
-        │
+        │   ├── SwiftSupply_Azure_Data_Platform.docx
+        │   ├── architecture_diagram.png
+        │   └── PowerBI_dashboard.png
         │── data/
         │   ├── inventory_sample.csv
         │   ├── salesorder_sample.csv
         │   └── shipments_sample.json
-        │
         │── notebooks/
-        │   ├── batch_transform.py
-        │   ├── gold_tables_creation.py
-        │   ├── streaming_bronze.py
-        │   └── streaming_silver.py
-        │
+        │   ├── SSL-batch-bronze-to-silver.py
+        │   ├── SSL-silver-gold.py
+        │   ├── SSL-streaming-bronze-silver.py
+        │   └── SSL-streaming-source-bronze.py
         │── pipelines/
-        │   ├── adf_batch_pipeline.json
-        │   ├── linked_services.json
-        │   └── datasets.json
-        │
+        │   ├── PL_SwiftSupply_DataIngestion.json 
         │── scripts/
-        │   └── shipment_simulator.py
-        │
+        │   └── Source_files_generator.py
         │── configs/
         │   ├── keyvault_config.json
         │   └── adls_paths.md
-        │
         └── powerbi/
             └── supplychain_dashboard.pbix
 
