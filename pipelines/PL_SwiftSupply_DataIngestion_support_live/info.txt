@@ -1,0 +1,6 @@
+selected resource name:		PL_SwiftSupply_DataIngestion
+selected resource type:		pipeline
+factory name:			SwiftSupplyLogistics-ADF
+factory location:		centralindia
+subscription id:		08403731-8c0c-4bdd-818a-078dbf4e88e1
+time of download (UTC):		Thu, 04 Sep 2025 18:54:07 GMT

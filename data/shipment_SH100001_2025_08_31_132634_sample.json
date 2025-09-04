@@ -1,0 +1,7 @@
+{
+  "shipment_id": "SH100001",
+  "warehouse_id": "WH2",
+  "status": "Delivered",
+  "location": "Delhi",
+  "timestamp": "2025-08-31T13:26:34Z"
+}

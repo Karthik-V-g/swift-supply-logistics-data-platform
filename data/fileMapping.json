@@ -1,0 +1,5 @@
+[
+  {"filenamePrefix": "inventory_", "sinkFolder": "inventory"},
+  {"filenamePrefix": "salesorder_", "sinkFolder": "salesorder"}
+]
+

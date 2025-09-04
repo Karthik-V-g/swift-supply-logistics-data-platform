@@ -1,0 +1,9 @@
+{
+  "keyvault_name": "swiftsupplykeyvault",
+  "secrets": {
+    "ssl-client-id": "Stored securely in Key Vault",
+    "ssl-client-secret": "Stored securely in Key Vault",
+    "ssl-tenant-id": "Stored securely in Key Vault",
+  },
+  "notes": "All secrets are retrieved in ADF and Databricks via Key Vault integration. Actual values are not stored in GitHub."
+}

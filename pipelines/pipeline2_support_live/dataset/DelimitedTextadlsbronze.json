@@ -1,0 +1,36 @@
+{
+    "name": "DelimitedTextadlsbronze",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureDataLakeStorage1",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "Filename": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": {
+                    "value": "@dataset().Filename",
+                    "type": "Expression"
+                },
+                "folderPath": {
+                    "value": "@concat('batch/',first(split(dataset().Filename, '_')))",
+                    "type": "Expression"
+                },
+                "fileSystem": "ssl-bronze"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

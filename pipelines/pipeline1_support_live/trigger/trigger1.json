@@ -1,0 +1,25 @@
+{
+    "name": "trigger1",
+    "properties": {
+        "annotations": [],
+        "runtimeState": "Started",
+        "pipelines": [
+            {
+                "pipelineReference": {
+                    "referenceName": "PL_SwiftSupply_DataIngestion",
+                    "type": "PipelineReference"
+                }
+            }
+        ],
+        "type": "ScheduleTrigger",
+        "typeProperties": {
+            "recurrence": {
+                "frequency": "Day",
+                "interval": 1,
+                "startTime": "2025-08-31T19:36:00",
+                "endTime": "2025-09-01T14:03:00",
+                "timeZone": "India Standard Time"
+            }
+        }
+    }
+}

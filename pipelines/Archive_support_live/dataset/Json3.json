@@ -1,0 +1,50 @@
+{
+    "name": "Json3",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureDataLakeStorage1",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "folderpath": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "Json",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "folderPath": {
+                    "value": "@dataset().folderpath",
+                    "type": "Expression"
+                },
+                "fileSystem": "ssl-bronze"
+            }
+        },
+        "schema": {
+            "type": "object",
+            "properties": {
+                "shipment_id": {
+                    "type": "string"
+                },
+                "warehouse_id": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "timestamp": {
+                    "type": "string"
+                },
+                "delay_reason": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

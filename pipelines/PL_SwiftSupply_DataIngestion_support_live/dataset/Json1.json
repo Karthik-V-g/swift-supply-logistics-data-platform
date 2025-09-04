@@ -1,0 +1,31 @@
+{
+    "name": "Json1",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureDataLakeStorage1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "Json",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "fileMapping.json",
+                "folderPath": "batch/filemapping",
+                "fileSystem": "ssl-bronze"
+            }
+        },
+        "schema": {
+            "type": "object",
+            "properties": {
+                "filenamePrefix": {
+                    "type": "string"
+                },
+                "sinkFolder": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

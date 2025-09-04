@@ -1,0 +1,6 @@
+selected resource name:		pipeline1
+selected resource type:		pipeline
+factory name:			SwiftSupplyLogistics-ADF
+factory location:		centralindia
+subscription id:		08403731-8c0c-4bdd-818a-078dbf4e88e1
+time of download (UTC):		Mon, 01 Sep 2025 19:39:55 GMT

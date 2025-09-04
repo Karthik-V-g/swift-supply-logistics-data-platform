@@ -1,0 +1,48 @@
+{
+    "name": "DelimitedTexts3",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AmazonS31",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AmazonS3Location",
+                "bucketName": "swiftsupply-logistics-source"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "warehouse_id",
+                "type": "String"
+            },
+            {
+                "name": "product_id",
+                "type": "String"
+            },
+            {
+                "name": "product_name",
+                "type": "String"
+            },
+            {
+                "name": "category",
+                "type": "String"
+            },
+            {
+                "name": "quantity_in_stock",
+                "type": "String"
+            },
+            {
+                "name": "last_restock_date",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
